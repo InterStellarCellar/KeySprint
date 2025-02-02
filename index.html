@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+
+        <div id="settings">
+            <label for="test-type">Choose test type:</label>
+            <select id="test-type">
+                <option value="random">Random Words</option>
+                <option value="common">Most Common Words</option>
+            </select>
+            <button onclick="startTest()">Start Test</button>
+        </div>
+
+        <div id="test-area" class="hidden">
+            <h2>Type the following:</h2>
+            <div id="words"></div>
+
+            <textarea id="input-field" placeholder="Start typing..." oninput="checkInput()"></textarea>
+
+            <div id="results" class="hidden">
+                <h3>Results</h3>
+                <p id="wpm"></p>
+                <p id="accuracy"></p>
+                <button onclick="resetTest()">Retry</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
