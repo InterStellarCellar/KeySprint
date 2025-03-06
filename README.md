@@ -1,4 +1,4 @@
-# Typing Practice
+# Key Sprint - A Typing Practice 
 
 A web-based typing practice tool designed to help users improve their typing speed and accuracy.
 
